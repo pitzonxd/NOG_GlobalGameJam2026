@@ -73,3 +73,8 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Ignore vc code and rider files
+.vsconfig
+.vs/*
+.idea/*
