@@ -21,6 +21,9 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
+	//Overriding this function to allow Owner Only See & Owner No See
+	virtual const AActor* GetViewOwner() const override { return this->GetOwner(); }
+	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType,
 	                           FActorComponentTickFunction* ThisTickFunction) override;
